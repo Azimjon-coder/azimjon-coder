@@ -1,0 +1,1285 @@
+/*fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');/*bold*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');/*medium*/
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');/*regular*/
+
+
+
+
+
+
+:root{
+    --sariq:#98a3a3;
+    --oq:#ffffff;
+}   
+
+
+
+/* loder */
+.loading{
+    margin: 0 auto;
+    position: fixed;
+    background-color:#8aabf3;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    animation: fadeOut 1s;
+    animation-fill-mode: forwards;
+    -webkit-animation: fadeOut 1s;
+    -webkit-animation-fill-mode: forwards;
+    -o-animation: fadeOut 1s;
+    -o-animation-fill-mode: forwards;
+    -moz-animation: fadeOut 1s;
+    -moz-animation-fill-mode: forwards;
+}
+.mainl{
+    margin: 15rem auto;
+    display: flex;
+    justify-content: center;
+}
+.dot{
+    border: 5px solid;
+    border-top-color: var(--sariq);
+    border-bottom-color: var(--sariq);
+    border-radius: 50px;
+    background-color: transparent;
+    width: 100px;
+    height: 100px;
+    animation: loder 1s linear;
+    animation-iteration-count: infinite;
+    -webkit-animation: loder 1s linear;
+    -webkit-animation-iteration-count: infinite;
+    -o-animation: loder 1s linear;
+    -o-animation-iteration-count: infinite;
+    -moz-animation: loder 1s linear;
+    -moz-animation-iteration-count: infinite;
+}
+.dot2{
+    margin:7px auto;
+    border: 5px solid;
+    border-right-color: var(--sariq);
+    border-left-color: var(--sariq);
+    border-radius: 50px;
+    background-color: transparent;
+    width: 75px;
+    height: 75px;
+    animation: loder 1s linear;
+    animation-iteration-count: infinite;
+    -webkit-animation: loder 1s linear;
+    -webkit-animation-iteration-count: infinite;
+    -o-animation: loder 1s linear;
+    -o-animation-iteration-count: infinite;
+    -moz-animation: loder 1s linear;
+    -moz-animation-iteration-count: infinite;
+}
+
+
+@keyframes loder{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes loder{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fadeOut{
+    100%{
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+@-webkit-keyframes fadeOut{
+    100%{
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+
+/*Scroll*/
+::-webkit-scrollbar{
+    width: 10px!important;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #a1a4bebe!important;
+    border-radius: 50px!important;
+}
+::-webkit-scrollbar-track{
+    background-color: #000!important;
+}
+html{
+    scroll-behavior:smooth;
+    
+}
+
+   
+
+.navbar{
+background-color:transparent;
+transition:0.3s linear;
+-webkit-transition: 0.3s linear;
+-moz-transition: 0.3s linear;
+-o-transition: 0.3s linear;
+}
+.fixed{
+background-color: #4e4b4be5!important;
+padding: 0;
+margin: 0;
+}
+.brand{
+    font-size: 29px;
+    color:var(--sariq) !important;
+    padding-left: 6rem;
+    font-weight: 900;
+}
+
+.navbar-nav{
+    margin: 0 30rem auto;
+}
+
+.navbar-nav > li{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 15px;
+    font-family: 'Roboto'sans-serif;
+}
+
+.nav-link{
+ color:var(--oq)!important;
+ transition: 0.3s ease;
+ -webkit-transition: 0.3 ease;
+ -moz-transition: 0.3 ease;
+ -o-transition: 0.3 ease;
+}
+
+.nav-link:hover{
+    color: var(--sariq)!important ;
+}
+
+.home{
+    background: url("../img/img-home.jpg") no-repeat;
+    background-size: cover;
+    height: 42rem;
+}
+
+.col-md-6{
+    margin: 30% auto;
+}
+ .title > h4{
+    color: var(--oq);
+    font-size: 3.5rem;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif; 
+    letter-spacing: 0.5px;
+}
+
+.title >p{
+    color:var(--oq);
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.button{
+    width: 100%;
+    margin: 3rem 10rem auto;
+}
+
+.button > a{
+    background-color: var(--sariq);
+    color: black;
+    padding: 1.5rem 4rem;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+}
+
+.button > a:hover{
+    color: white;
+    text-decoration:none;
+}
+
+
+/*SERVICES section*/
+
+.services{
+    padding: 5rem 0;
+}
+
+.services > .container > h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.services > .container > .row > .col-md-4 > .card {
+    border: none;
+    border-radius: 0;
+
+}
+
+.services > .container > .row > .col-md-4 > .card > .card-header{
+    border-bottom: none;
+    text-align: center;
+    background-color: transparent;
+}
+.card > .card-header > i{
+    font-size: 3rem;
+    background-color: var(--sariq);
+    padding: 1.5rem;
+    border-radius: 50px;
+}
+.card > .card-body{
+    text-align: center;
+}
+
+/*PORTFOLIO PAGE*/
+
+.card-header > img{
+    height: 360px;
+}
+
+.card-header {
+    position:relative;
+    overflow: hidden;
+}
+
+.card-header > .overlay{
+    position: absolute;
+    top: 450px;
+    background-color: #5157548c ;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease;
+    -webkit-transition: 0.5 ease;
+    -moz-transition: 0.5 ease;
+    -o-transition: 0.5 ease;
+
+}
+
+.card-header:hover .overlay {
+    top: 0;
+}
+.over{
+    font-family: 'Open Sans', sans-serif; 
+    text-align: center;
+    color: var(--oq);
+    
+}
+.overlay>h3{
+    padding-top: 70px;
+}
+.container > h3{
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+/*About page*/
+.about{
+    padding: 5rem 0;
+}
+
+.about > .container > h3{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+.about > .container > .row > .col-md-4{
+    margin: 4rem 5rem;
+}
+.about > .container > .row > .col-md-4:nth-child(2){
+    margin: 5rem 0;
+}
+.info > h4{
+    margin: 0;
+    font-size: 2.2rem;
+    font-family: 'Open Sans',sans-serif;
+}
+.info > p{
+    letter-spacing: 0.5px;
+    margin: 2rem 0;
+}
+  li{
+    list-style: none;
+    font-size: 20px;
+    display:flex;
+    justify-content: space-between;
+}
+ul > li > .firstSpan{
+    font-weight: bold;
+}
+ul > li > .secondSpan{
+    color: #808080
+}
+
+
+
+/* contacts */
+.contacts>.container > .row >.col-md-6{
+    margin: 0;
+}
+
+/*Footer section*/
+.footer{
+    background-color: #000;
+    padding: 2rem;
+}
+.social-networks > a {
+text-decoration: none;
+margin: 5px;
+}
+.copyright>p{
+    color: white;
+
+}
+
+.social-networks>a>i{
+ width: 40px;
+ height: 40px;
+ background-color: var(--sariq);
+ color: #000;
+ text-align: center;
+ line-height: 40px;
+ font-size: 1.5rem;
+ border-radius: 50px;
+ transition: 0.3s ease;
+ -webkit-transition:0.3s ease;
+ -moz-transition:0.3s ease;
+ -o-transition:0.3s ease;
+
+}
+.footer a:hover{
+text-decoration: none;
+}
+.social-networks>a>i:hover{
+    background-color: #000;
+    color: var(--sariq);
+}
+.par{
+    color: white;
+    text-align: center;
+}
+
+/* Responsive */
+@media screen and (max-width:1200px)/**/{
+    html,body{
+        overflow-x:hidden;
+    }
+    .brand{
+        padding: 0;
+        font-size: 1.3rem;
+    }
+    .change{
+        background-color: #000!important;
+    }
+    .navbar> button{
+        border: none!important;
+    }
+    .navbar>button:focus{
+        box-shadow: none!important;
+        outline: none;
+    }
+    .navbar-nav{
+        margin: 0 15rem;
+    }
+    .navbar-nav >li{
+        margin:5px;
+    }
+    /* home */
+    .home{
+        height: 47rem;
+    }
+    .col-md-6{
+        margin: 40% auto;
+    }
+    .title h4  {
+        font-size: 2.5rem;
+    }
+    .title p{
+        font-size: 1.3rem ;
+    }
+    .button{
+        margin: 3rem 7rem auto;
+    }
+    .button> a{
+        padding: 1rem 2.5rem;
+        font-size: 1rem;
+    }
+    /* .services */
+    .services > .container > h3{
+        font-size: 1.8rem;
+    }
+    .services > .container > p{
+        font-size: 0.9rem;
+    }
+    .card > .card-header > i {
+        font-size: 1.8rem;
+        border-radius: 20px;
+        padding: 1.1rem;
+    }
+
+    /* Portfolio */
+    .portfolio > .container > h3{
+        font-size: 1.8rem;
+    }
+    .portfolio  > .container > p{
+        font-size: 0.9rem;
+    }
+    .overlay > h3{
+         font-size: 1.5rem;
+    }
+    .card-header > img {
+
+        height: 200px;
+    
+    }
+
+    /* About */
+    .about > .container > h3{
+        font-size: 1.8rem;
+    }
+    .about  > .container > p{
+        font-size: 0.9rem;
+    }
+    .about > .container > .row > .col-md-4{
+        margin: 3rem 5rem 0; 
+    }
+    .about > .container > .row > .col-md-4:nth-child(2){
+        margin: 3rem 0;
+    }
+    .info > h4{
+        font-size: 1rem;
+    }
+    .info > p{
+        margin: 1rem 0;
+        font-size: 12px;
+    }
+    ul{
+        padding-left: 0px;
+    }
+    li{
+        font-size: 12px;
+    }
+    .main{
+        margin-bottom: 0.3rem;
+    }
+    .copyright{
+        text-align: center;
+    }
+    .surish{
+        margin-left: 0rem;
+    }
+}
+@media screen and (max-width:1024px)/**/{
+    html,body{
+        overflow-x:hidden;
+    }
+    .brand{
+        padding: 0;
+        font-size: 1.3rem;
+    }
+    .change{
+        background-color: #000!important;
+    }
+    .navbar> button{
+        border: none!important;
+    }
+    .navbar>button:focus{
+        box-shadow: none!important;
+        outline: none;
+    }
+    .navbar-nav{
+        margin: 0 15rem;
+    }
+    .navbar-nav >li{
+        margin:5px;
+    }
+    /* home */
+    .home{
+        height: 47rem;
+    }
+    .col-md-6{
+        margin: 40% auto;
+    }
+    .title h4  {
+        font-size: 2.5rem;
+    }
+    .title p{
+        font-size: 1.3rem ;
+    }
+    .button{
+        margin: 3rem 7rem auto;
+    }
+    .button> a{
+        padding: 1rem 2.5rem;
+        font-size: 1rem;
+    }
+    /* .services */
+    .services > .container > h3{
+        font-size: 1.8rem;
+    }
+    .services > .container > p{
+        font-size: 0.9rem;
+    }
+    .card > .card-header > i {
+        font-size: 1.8rem;
+        border-radius: 20px;
+        padding: 1.1rem;
+    }
+
+    /* Portfolio */
+    .portfolio > .container > h3{
+        font-size: 1.8rem;
+    }
+    .portfolio  > .container > p{
+        font-size: 0.9rem;
+    }
+    .overlay > h3{
+      font-size: 1.5rem;
+    }
+    .card-header > img {
+
+        height: 200px;
+    
+    }
+
+    /* About */
+    .about > .container > h3{
+        font-size: 1.8rem;
+    }
+    .about  > .container > p{
+        font-size: 0.9rem;
+    }
+    .about > .container > .row > .col-md-4{
+        margin: 3rem 5rem 0; 
+    }
+    .about > .container > .row > .col-md-4:nth-child(2){
+        margin: 3rem 0;
+    }
+    .info > h4{
+        font-size: 1rem;
+    }
+    .info > p{
+        margin: 1rem 0;
+        font-size: 12px;
+    }
+    ul{
+        padding-left: 0px;
+    }
+    li{
+        font-size: 12px;
+    }
+    .main{
+        margin-bottom: 0.3rem;
+    }
+    .copyright{
+        text-align: center;
+    }
+    .surish{
+        margin-left: 0rem;
+    }
+}
+@media screen and (max-width:976px)/**/{
+    html,body{
+        overflow-x:hidden;
+    }
+    .brand{
+        padding: 0;
+        font-size: 1.3rem;
+    }
+    .change{
+        background-color: #000!important;
+    }
+    .navbar> button{
+        border: none!important;
+    }
+    .navbar>button:focus{
+        box-shadow: none!important;
+        outline: none;
+    }
+    .navbar-nav{
+        margin: 0 15rem;
+    }
+    .navbar-nav >li{
+        margin:5px;
+    }
+    /* home */
+    .home{
+        height: 47rem;
+    }
+    .col-md-6{
+        margin: 40% auto;
+    }
+    .title h4  {
+        font-size: 2.5rem;
+    }
+    .title p{
+        font-size: 1.3rem ;
+    }
+    .button{
+        margin: 3rem 7rem auto;
+    }
+    .button> a{
+        padding: 1rem 2.5rem;
+        font-size: 1rem;
+    }
+    /* .services */
+    .services > .container > h3{
+        font-size: 1.8rem;
+    }
+    .services > .container > p{
+        font-size: 0.9rem;
+    }
+    .card > .card-header > i {
+        font-size: 1.8rem;
+        border-radius: 20px;
+        padding: 1.1rem;
+    }
+
+    /* Portfolio */
+    .portfolio > .container > h3{
+        font-size: 1.8rem;
+    }
+    .portfolio  > .container > p{
+        font-size: 0.9rem;
+    }
+    .overlay > h3{
+         font-size: 1.5rem;
+    }
+    .card-header > img {
+       
+        height: 360px;
+    
+    }
+
+    /* About */
+    .about > .container > h3{
+        font-size: 1.8rem;
+    }
+    .about  > .container > p{
+        font-size: 0.9rem;
+    }
+    .about > .container > .row > .col-md-4{
+        margin: 3rem 5rem 0; 
+    }
+    .about > .container > .row > .col-md-4:nth-child(2){
+        margin: 3rem 0;
+    }
+    .info > h4{
+        font-size: 1rem;
+    }
+    .info > p{
+        margin: 1rem 0;
+        font-size: 12px;
+    }
+    ul{
+        padding-left: 0px;
+    }
+    li{
+        font-size: 12px;
+    }
+    .main{
+        margin-bottom: 0.3rem;
+    }
+    .copyright{
+        text-align: center;
+    }
+    .surish{
+        margin-left: 0rem;
+    }
+}
+@media screen and (max-width:767px)/**/{
+    html,body{
+        overflow-x:hidden;
+    }
+    .brand{
+        padding: 0;
+        font-size: 1.3rem;
+    }
+    .change{
+        background-color: #000!important;
+    }
+    .navbar> button{
+        border: none!important;
+    }
+    .navbar>button:focus{
+        box-shadow: none!important;
+        outline: none;
+    }
+    .navbar-nav{
+        margin: 0 15rem;
+    }
+    .navbar-nav >li{
+        margin:5px;
+    }
+    /* home */
+    .home{
+        height: 36rem;
+    }
+    .col-md-6{
+        margin: 40% auto;
+    }
+    .title h4  {
+        font-size: 2.5rem;
+    }
+    .title p{
+        font-size: 1.3rem ;
+    }
+    .button{
+        margin: 3rem 12.5rem auto;
+    }
+    .button> a{
+        padding: 1rem 2.5rem;
+        font-size: 1rem;
+    }
+    /* .services */
+    .services > .container > h3{
+        font-size: 1.8rem;
+    }
+    .services > .container > p{
+        font-size: 0.9rem;
+    }
+    .card > .card-header > i {
+        font-size: 1.8rem;
+        border-radius: 20px;
+        padding: 1.1rem;
+    }
+
+    /* Portfolio */
+    .portfolio > .container > h3{
+        font-size: 1.8rem;
+    }
+    .portfolio  > .container > p{
+        font-size: 0.9rem;
+    }
+
+    /* About */
+    .about > .container > h3{
+        font-size: 1.8rem;
+    }
+    .about  > .container > p{
+        font-size: 0.9rem;
+    }
+    .about > .container > .row > .col-md-4{
+        margin: 3rem 5rem 0; 
+    }
+    .about > .container > .row > .col-md-4:nth-child(2){
+        margin: 3rem 0;
+    }
+    .info > h4{
+        font-size: 1.8rem;
+    }
+    .info > p{
+        margin: 1rem 0;
+    }
+    ul{
+        padding-left: 20px;
+    }
+    li{
+        font-size: 15px;
+    }
+    .main{
+        margin-bottom: 0.3rem;
+    }
+    .copyright{
+        text-align: center;
+    }
+    .surish{
+        margin-left: 10rem;
+    }
+}
+@media screen and (max-width:501px)/**/{
+    html,body{
+        overflow-x:hidden;
+    }
+    .brand{
+        padding: 0;
+        font-size: 1.3rem;
+    }
+    .change{
+        background-color: #000!important;
+    }
+    .navbar> button{
+        border: none!important;
+    }
+    .navbar>button:focus{
+        box-shadow: none!important;
+        outline: none;
+    }
+    .navbar-nav{
+        margin: 0 11 rem;
+    }
+    .navbar-nav >li{
+        margin:5px;
+    }
+    /* home */
+    .home{
+        height: 36rem;
+    }
+    .col-md-6{
+        margin: 50% auto;
+    }
+    .title h4  {
+        font-size: 2rem;
+    }
+    .title p{
+        font-size: 1rem ;
+    }
+    .button{
+        margin: 3rem 10.5rem auto;
+    }
+    .button> a{
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+    }
+    /* .services */
+    .services > .container > h3{
+        font-size: 1.8rem;
+    }
+    .services > .container > p{
+        font-size: 0.9rem;
+    }
+    .card > .card-header > i {
+        font-size: 1.8rem;
+        border-radius: 20px;
+        padding: 1.1rem;
+    }
+
+    /* Portfolio */
+    .portfolio > .container > h3{
+        font-size: 1.8rem;
+    }
+    .portfolio  > .container > p{
+        font-size: 0.9rem;
+    }
+
+    /* About */
+    .about > .container > h3{
+        font-size: 1.8rem;
+    }
+    .about  > .container > p{
+        font-size: 0.9rem;
+    }
+    .about > .container > .row > .col-md-4{
+        margin: 3rem 5rem 0; 
+    }
+    .about > .container > .row > .col-md-4:nth-child(2){
+        margin: 3rem 0;
+    }
+    .info > h4{
+        font-size: 1.8rem;
+    }
+    .info > p{
+        margin: 1rem 0;
+    }
+    ul{
+        padding-left: 20px;
+    }
+    li{
+        font-size: 15px;
+    }
+    .main{
+        margin-bottom: 0.3rem;
+    }
+    .copyright{
+        text-align: center;
+    }
+}
+@media screen and (max-width:460px)/*iphone 6+*/{
+    html,body{
+        overflow-x:hidden;
+    }
+    .brand{
+        padding: 0;
+        font-size: 1.3rem;
+    }
+    .change{
+        background-color: #000!important;
+    }
+    .navbar> button{
+        border: none!important;
+    }
+    .navbar>button:focus{
+        box-shadow: none!important;
+        outline: none;
+    }
+    .navbar-nav{
+        margin: 0 9.5rem;
+    }
+    .navbar-nav >li{
+        margin:5px;
+    }
+    /* home */
+    .home{
+        height: 36rem;
+    }
+    .col-md-6{
+        margin: 50% auto;
+    }
+    .title h4  {
+        font-size: 2rem;
+    }
+    .title p{
+        font-size: 1rem ;
+    }
+    .button{
+        margin: 3rem 7.5rem auto;
+    }
+    .button> a{
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+    }
+    /* .services */
+    .services > .container > h3{
+        font-size: 1.8rem;
+    }
+    .services > .container > p{
+        font-size: 0.9rem;
+    }
+    .card > .card-header > i {
+        font-size: 1.8rem;
+        border-radius: 20px;
+        padding: 1.1rem;
+    }
+
+    /* Portfolio */
+    .portfolio > .container > h3{
+        font-size: 1.8rem;
+    }
+    .portfolio  > .container > p{
+        font-size: 0.9rem;
+    }
+
+    /* About */
+    .about > .container > h3{
+        font-size: 1.8rem;
+    }
+    .about  > .container > p{
+        font-size: 0.9rem;
+    }
+    .about > .container > .row > .col-md-4{
+        margin: 3rem 3rem 0; 
+    }
+    .about > .container > .row > .col-md-4:nth-child(2){
+        margin: 3rem 0;
+    }
+    .info > h4{
+        font-size: 1.8rem;
+    }
+    .info > p{
+        margin: 1rem 0;
+    }
+    ul{
+        padding-left: 20px;
+    }
+    li{
+        font-size: 15px;
+    }
+    .main{
+        margin-bottom: 0.3rem;
+    }
+    .copyright{
+        text-align: center;
+    }
+    .surish{
+        margin-left: 6rem;
+    }
+}
+@media screen and (max-width:400 px)/*iphone x*/{
+    html,body{
+        overflow-x:hidden;
+    }
+    .brand{
+        padding: 0;
+        font-size: 1.3rem;
+    }
+    .change{
+        background-color: #000!important;
+    }
+    .navbar> button{
+        border: none!important;
+    }
+    .navbar>button:focus{
+        box-shadow: none!important;
+        outline: none;
+    }
+    .navbar-nav{
+        margin: 0 6rem;
+    }
+    .navbar-nav >li{
+        margin: 10px;
+    }
+    /* home */
+    .home{
+        height: 36rem;
+    }
+    .col-md-6{
+        margin: 50% auto;
+    }
+    .title h4  {
+        font-size: 2rem;
+    }
+    .title p{
+        font-size: 1rem ;
+    }
+    .button{
+        margin: 3rem 7rem auto;
+    }
+    .button> a{
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+    }
+    /* .services */
+    .services > .container > h3{
+        font-size: 1.8rem;
+    }
+    .services > .container > p{
+        font-size: 0.9rem;
+    }
+    .card > .card-header > i {
+        font-size: 1.8rem;
+        border-radius: 20px;
+        padding: 1.1rem;
+    }
+
+    /* Portfolio */
+    .portfolio > .container > h3{
+        font-size: 1.8rem;
+    }
+    .portfolio  > .container > p{
+        font-size: 0.9rem;
+    }
+
+    /* About */
+    .about > .container > h3{
+        font-size: 1.8rem;
+    }
+    .about  > .container > p{
+        font-size: 0.9rem;
+    }
+    .about > .container > .row > .col-md-4{
+        margin: 3rem 2rem 0; 
+    }
+    .about > .container > .row > .col-md-4:nth-child(2){
+        margin: 3rem 0;
+    }
+    .info > h4{
+        font-size: 1.8rem;
+    }
+    .info > p{
+        margin: 1rem 0;
+    }
+    ul{
+        padding-left: 20px;
+    }
+    li{
+        font-size: 15px;
+    }
+    .main{
+        margin-bottom: 0.3rem;
+    }
+    .copyright{
+        text-align: center;
+    }
+}
+@media screen and (max-width:370px)/*gallaxi III*/{
+    html,body{
+        overflow-x:hidden;
+    }
+    .brand{
+        padding: 0;
+        font-size: 1.3rem;
+    }
+    .change{
+        background-color: #000!important;
+    }
+    .navbar> button{
+        border: none!important;
+    }
+    .navbar>button:focus{
+        box-shadow: none!important;
+        outline: none;
+    }
+    .navbar-nav{
+        margin: 0 6rem;
+    }
+    .navbar-nav >li{
+        margin: 10px;
+    }
+    /* home */
+    .home{
+        height: 36rem;
+    }
+    .col-md-6{
+        margin: 50% auto;
+    }
+    .title h4  {
+        font-size: 2rem;
+    }
+    .title p{
+        font-size: 1rem ;
+    }
+    .button{
+        margin: 3rem 6.5rem auto;
+    }
+    .button> a{
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+    }
+    /* .services */
+    .services > .container > h3{
+        font-size: 1.8rem;
+    }
+    .services > .container > p{
+        font-size: 0.9rem;
+    }
+    .card > .card-header > i {
+        font-size: 1.8rem;
+        border-radius: 20px;
+        padding: 1.1rem;
+    }
+
+    /* Portfolio */
+    .portfolio > .container > h3{
+        font-size: 1.8rem;
+    }
+    .portfolio  > .container > p{
+        font-size: 0.9rem;
+    }
+
+    /* About */
+    .about > .container > h3{
+        font-size: 1.8rem;
+    }
+    .about  > .container > p{
+        font-size: 0.9rem;
+    }
+    .about > .container > .row > .col-md-4{
+        margin: 3rem 2rem 0; 
+    }
+    .about > .container > .row > .col-md-4:nth-child(2){
+        margin: 3rem 0;
+    }
+    .info > h4{
+        font-size: 1.8rem;
+    }
+    .info > p{
+        margin: 1rem 0;
+    }
+    ul{
+        padding-left: 20px;
+    }
+    li{
+        font-size: 15px;
+    }
+    .main{
+        margin-bottom: 0.3rem;
+    }
+    .copyright{
+        text-align: center;
+    }
+}
+@media (min-width:315px) and (max-width:330px)/*iphone 4*/{
+    html,body{
+        overflow-x:hidden;
+    }
+    .brand{
+        padding: 0;
+        font-size: 1.3rem;
+    }
+    .change{
+        background-color: #000!important;
+    }
+    .navbar> button{
+        border: none!important;
+    }
+    .navbar>button:focus{
+        box-shadow: none!important;
+        outline: none;
+    }
+    .navbar-nav{
+        margin: 0 6rem;
+    }
+    .navbar-nav >li{
+        margin: 10px;
+    }
+    /* home */
+    .home{
+        height: 30rem;
+    }
+    .col-md-6{
+        margin: 50% auto;
+    }
+    .title h4  {
+        font-size: 2rem;
+    }
+    .title p{
+        font-size: 1rem ;
+    }
+    .button{
+        margin: 3rem 5.5rem auto;
+    }
+    .button> a{
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+    }
+    /* .services */
+    .services > .container > h3{
+        font-size: 1.8rem;
+    }
+    .services > .container > p{
+        font-size: 0.9rem;
+    }
+    .card > .card-header > i {
+        font-size: 1.8rem;
+        border-radius: 20px;
+        padding: 1.1rem;
+    }
+
+    /* Portfolio */
+    .portfolio > .container > h3{
+        font-size: 1.8rem;
+    }
+    .portfolio  > .container > p{
+        font-size: 0.9rem;
+    }
+
+    /* About */
+    .about > .container > h3{
+        font-size: 1.8rem;
+    }
+    .about  > .container > p{
+        font-size: 0.9rem;
+    }
+    .about > .container > .row > .col-md-4{
+        margin: 3rem 2rem 0; 
+    }
+    .about > .container > .row > .col-md-4:nth-child(2){
+        margin: 3rem 0;
+    }
+    .info > h4{
+        font-size: 1.8rem;
+    }
+    .info > p{
+        margin: 1rem 0;
+    }
+    ul{
+        padding-left: 20px;
+    }
+    li{
+        font-size: 15px;
+    }
+    .main{
+        margin-bottom: 0.3rem;
+    }
+    .copyright{
+        text-align: center;
+    }
+}
